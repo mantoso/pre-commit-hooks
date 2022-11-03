@@ -1,0 +1,11 @@
+- id: git-submodule-sanity-check
+  name: Git submodule sanity check
+  description: Sanity Check on git submodules
+  language: script
+  entry: hooks/submodule-sanity-check.sh
+
+- id: validate-semantic-version
+  name: Validate content of VERSION is a semantic version
+  language: python
+  files: VERSION
+  entry: validate-semantic-version
